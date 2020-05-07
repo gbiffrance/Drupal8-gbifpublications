@@ -1,0 +1,5 @@
+gbifpublications.form:
+  title: 'GBIF Publications settings'
+  description: 'Configure settings for the GBIF Publications module.'
+  route_name: gbifpublications.form
+  parent: 'system.admin_config_development'

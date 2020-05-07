@@ -1,0 +1,54 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function gbifpublications_help($route_name, RouteMatchInterface $route_match) {
+    switch ($route_name) {
+        case 'help.page.gbifpublications':
+            return t('
+        <h2>GBIF Publications displayer for Drupal.</h2>
+        <h3>Instructions</h3>
+        <p>Go to  <strong>/gbifpublications/generate/{country_code}</strong> where {country_code} is a country code with 2 letters.</p>
+        <p>The page will generate the file who contains the publications from the GBIF API.</p>
+        <p>Then, visit <strong>/gbifpublications/display/{country_code}</strong> to see the publications of the chosen country in the GBIF network.</p>
+        <p>For a block, visit <strong>/admin/config/development/gbifpublications</strong>.</p>
+        <p>If you need, there\'s also a specific <em>generate GBIF Publications</em> permission.</p>
+        <h3>Attention</h3>
+        <p>Most bugs have been ironed out, holes covered, features added. But this module is a work in progress. Please report bugs and suggestions, ok?</p>
+      ');
+    }
+}
+
+
+/**
+ * Implements hook_theme().
+ */
+function gbifpublications_theme($existing, $type, $theme, $path) {
+    $variables = array(
+        'gbifpublicationsgenerate' => array(
+            'variables' => array(
+                '$country_code' => NULL,
+            ),
+            'template' => 'gbifpublicationsgenerate',
+        ),
+        'gbifpublicationsdisplaydefault' => array(
+            'variables' => array(
+                'country_code' => NULL,
+            ),
+            'template' => 'gbifpublicationsdisplay',
+        ),
+        'gbifpublicationsdisplay' => array(
+            'variables' => array(
+                'country_code' => NULL,
+                'publications' => NULL,
+            ),
+            'template' => 'gbifpublicationsdisplay',
+        ),
+    );
+    return $variables;
+}
+
+

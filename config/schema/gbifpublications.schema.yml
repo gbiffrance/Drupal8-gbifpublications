@@ -1,0 +1,20 @@
+gbifpublications.settings:
+  type: config_object
+  label: 'GBIF Publications settings'
+  mapping:
+    gbifpublications:
+      type: mapping
+      mapping:
+        page_title:
+          type: text
+          label: 'GBIF Publication generator page title :'
+        country_code:
+          type: text
+          label: 'Code on two letter of a country to getting publications from GBIF API :'
+block.settings.gbifpublications_block:
+  type: block_settings
+  label: 'GBIF Publication block'
+  mapping:
+    gbifpublications_block_settings:
+      type: text
+      label: 'GBIF Publication block settings'

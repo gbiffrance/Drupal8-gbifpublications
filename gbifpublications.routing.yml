@@ -1,0 +1,28 @@
+gbifpublications.generate:
+  path: 'gbifpublications/generate/{country}'
+  defaults:
+    _controller: '\Drupal\gbifpublications\Controller\GBIFPublicationsController::generate'
+  requirements:
+    _permission: 'generate GBIF Publications'
+
+gbifpublications.displaydefault:
+  path: 'gbifpublications/display/{country}'
+  defaults:
+    _controller: '\Drupal\gbifpublications\Controller\GBIFPublicationsController::displaydefault'
+  requirements:
+    _permission: 'generate GBIF Publications'
+
+gbifpublications.display:
+  path: 'gbifpublications/display/{country}/{debut}'
+  defaults:
+    _controller: '\Drupal\gbifpublications\Controller\GBIFPublicationsController::display'
+  requirements:
+    _permission: 'generate GBIF Publications'
+
+gbifpublications.form:
+  path: '/admin/config/development/gbifpublications'
+  defaults:
+    _form: 'Drupal\gbifpublications\Form\GBIFPublicationsForm'
+    _title: 'GBIF Publications settings'
+  requirements:
+    _permission: 'administer site configuration'

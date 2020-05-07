@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="130a534b-8955-434a-9e2d-76e7bc3f4955" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="ProjectId" id="1YI7kMVuaeoklmFw0HQx9Wer8CW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gbifstats" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHP Script.gbifpublications.module">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="loremipsum.module" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/loremipsum/loremipsum.module" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="gbifpublications.module" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/gbifpublications.module">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.0" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.gbifpublications.module" />
+        <item itemvalue="JavaScript Debug.loremipsum.module" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="130a534b-8955-434a-9e2d-76e7bc3f4955" name="Default Changelist" comment="" />
+      <created>1582618396997</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582618396997</updated>
+      <workItem from="1582618398862" duration="8656000" />
+      <workItem from="1583489677372" duration="1893000" />
+      <workItem from="1583736632307" duration="599000" />
+      <workItem from="1584370674892" duration="2440000" />
+      <workItem from="1584438892343" duration="811000" />
+      <workItem from="1584624519965" duration="10778000" />
+      <workItem from="1584690379900" duration="2107000" />
+      <workItem from="1584710939124" duration="4983000" />
+      <workItem from="1584950322474" duration="5524000" />
+      <workItem from="1584968285652" duration="9317000" />
+      <workItem from="1585037313133" duration="23638000" />
+      <workItem from="1585125813637" duration="665000" />
+      <workItem from="1585141523844" duration="4209000" />
+      <workItem from="1585153516319" duration="1147000" />
+      <workItem from="1585215221481" duration="10171000" />
+      <workItem from="1585297357531" duration="671000" />
+      <workItem from="1585314180352" duration="1239000" />
+      <workItem from="1586266635681" duration="142000" />
+      <workItem from="1586270309738" duration="601000" />
+      <workItem from="1586338109561" duration="610000" />
+      <workItem from="1586414025916" duration="613000" />
+      <workItem from="1586854644175" duration="565000" />
+      <workItem from="1588144223308" duration="18865000" />
+      <workItem from="1588231197775" duration="18487000" />
+      <workItem from="1588582778444" duration="21726000" />
+      <workItem from="1588664069412" duration="1263000" />
+      <workItem from="1588668847685" duration="1387000" />
+      <workItem from="1588755890623" duration="929000" />
+      <workItem from="1588844161824" duration="607000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1907" y="24" width="853" height="1056" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588583116734">
+      <screen x="1280" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1907" y="24" width="853" height="1056" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1280.0.1920.1080/65.24.1215.1000@1280.0.1920.1080" timestamp="1588583116734" />
+    <state x="671" y="24" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1584371439899" />
+    <state x="2591" y="221" key="#loremipsum.module" timestamp="1582618445670">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2591" y="221" key="#loremipsum.module/65.24.1855.1056/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582618445670" />
+    <state x="2061" y="297" key="FileChooserDialogImpl" timestamp="1588844166844">
+      <screen x="1280" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2061" y="297" key="FileChooserDialogImpl/1280.0.1920.1080/65.24.1215.1000@1280.0.1920.1080" timestamp="1588844166844" />
+    <state x="559" y="299" key="FileChooserDialogImpl/1280.0.1920.1080/65.24.1215.1000@65.24.1215.1000" timestamp="1586414036798" />
+    <state x="2700" y="297" key="FileChooserDialogImpl/65.24.1855.1056/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582644858585" />
+    <state x="819" y="314" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1584638400390" />
+    <state width="1809" height="296" key="GridCell.Tab.0.bottom" timestamp="1585068947911">
+      <screen x="1280" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1809" height="296" key="GridCell.Tab.0.bottom/1280.0.1920.1080/65.24.1215.1000@1280.0.1920.1080" timestamp="1585068947911" />
+    <state width="1809" height="296" key="GridCell.Tab.0.bottom/65.24.1855.1056/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582644859754" />
+    <state width="1809" height="296" key="GridCell.Tab.0.center" timestamp="1585068947911">
+      <screen x="1280" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1809" height="296" key="GridCell.Tab.0.center/1280.0.1920.1080/65.24.1215.1000@1280.0.1920.1080" timestamp="1585068947911" />
+    <state width="1809" height="296" key="GridCell.Tab.0.center/65.24.1855.1056/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582644859753" />
+    <state width="1809" height="296" key="GridCell.Tab.0.left" timestamp="1585068947910">
+      <screen x="1280" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1809" height="296" key="GridCell.Tab.0.left/1280.0.1920.1080/65.24.1215.1000@1280.0.1920.1080" timestamp="1585068947910" />
+    <state width="1809" height="296" key="GridCell.Tab.0.left/65.24.1855.1056/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582644859753" />
+    <state width="1809" height="296" key="GridCell.Tab.0.right" timestamp="1585068947911">
+      <screen x="1280" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1809" height="296" key="GridCell.Tab.0.right/1280.0.1920.1080/65.24.1215.1000@1280.0.1920.1080" timestamp="1585068947911" />
+    <state width="1809" height="296" key="GridCell.Tab.0.right/65.24.1855.1056/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582644859753" />
+    <state x="1888" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1588755891486">
+      <screen x="1280" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1888" y="351" key="com.intellij.ide.util.TipDialog/1280.0.1920.1080/65.24.1215.1000@1280.0.1920.1080" timestamp="1588755891486" />
+    <state x="450" y="349" key="com.intellij.ide.util.TipDialog/1280.0.1920.1080/65.24.1215.1000@65.24.1215.1000" timestamp="1588582486982" />
+    <state x="653" y="367" key="com.intellij.ide.util.TipDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1584438892357" />
+    <state x="1681" y="254" width="783" height="826" key="find.popup" timestamp="1588595066171">
+      <screen x="1280" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1681" y="254" width="783" height="826" key="find.popup/1280.0.1920.1080/65.24.1215.1000@1280.0.1920.1080" timestamp="1588595066171" />
+    <state x="2557" y="269" width="710" height="538" key="find.popup/65.24.1855.1056/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582644213370" />
+    <state x="680" y="287" width="710" height="538" key="find.popup/65.24.1855.1056@65.24.1855.1056" timestamp="1584372510282" />
+    <state x="720" y="273" width="1200" height="807" key="find.popup/65.24.3135.1056@65.24.3135.1056" timestamp="1584629821212" />
+  </component>
+</project>
