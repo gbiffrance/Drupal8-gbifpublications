@@ -22,35 +22,45 @@ class GBIFPublicationsController {
      */
     public function generate($country) {
 
-        // Get Default settings in gbifpublications.settings.yml
-        $config = \Drupal::config('gbifpublications.settings');
-        // Page title and source text.
-        $page_title = $config->get('gbifpublications.page_title');
+        /*  Test the validity of the country code   */
+        $countryCode = ["AD", "AE", "AF", "AG", "AI", "AL", "AM", "AO", "AQ", "AR", "AS", "AT", "AU", "AW", "AX", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BL", "BM", "BN", "BO", "BQ", "BR", "BS", "BT", "BV", "BW", "BY", "BZ", "CA", "CC", "CD", "CF", "CG", "CH", "CI", "CK", "CL", "CM", "CN", "CO", "CR", "CU", "CV", "CW", "CX", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "EH", "ER", "ES", "ET", "FI", "FJ", "FK", "FM", "FO", "FR", "GA", "GB", "GD", "GE", "GF", "GG", "GH", "GI", "GL", "GM", "GN", "GP", "GQ", "GR", "GS", "GT", "GU", "GW", "GY", "HK", "HM", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IM", "IN", "IO", "IQ", "IR", "IS", "IT", "JE", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KP", "KR", "KW", "KY", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MF", "MG", "MH", "MK", "ML", "MM", "MN", "MO", "MP", "MQ", "MR", "MS", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NC", "NE", "NF", "NG", "NI", "NL", "NO", "NP", "NR", "NU", "NZ", "OM", "PA", "PE", "PF", "PG", "PH", "PK", "PL", "PM", "PN", "PR", "PS", "PT", "PW", "PY", "QA", "RE", "RO", "RS", "RU", "RW", "SA", "SB", "SC", "SD", "SE", "SG", "SH", "SI", "SJ", "SK", "SL", "SM", "SN", "SO", "SR", "SS", "ST", "SV", "SX", "SY", "SZ", "TC", "TD", "TF", "TG", "TH", "TJ", "TK", "TL", "TM", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UM", "US", "UY", "UZ", "VA", "VC", "VE", "VG", "VI", "VN", "VU", "WF", "WS", "YE", "YT", "ZA", "ZM", "ZW"];
 
-        //Path of the module
-        $module_handler = \Drupal::service('module_handler');
-        $module_path = $module_handler->getModule('gbifpublications')->getPath();
+        $element['#message_erreur'] = "NoError";
 
-        //Get informations
-        $curl_publications = curl_init();
-        curl_setopt_array($curl_publications, [
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_URL => 'https://www.gbif.org/api/resource/search?contentType=literature&countriesOfResearcher='.$country
-        ]);
+        if(! in_array($country, $countryCode)){
+            $element['#message_erreur'] = Html::escape("Code pays invalide dans votre URL");
+        }else {
 
-        if (!curl_exec($curl_publications)) {
-            die('Error: "' . curl_error($curl_publications) . '" - Code: ' . curl_errno($curl_publications));
-        } else {
-            $publications_json = curl_exec($curl_publications);
-            curl_close($curl_publications);
+            // Get Default settings in gbifpublications.settings.yml
+            $config = \Drupal::config('gbifpublications.settings');
+            // Page title and source text.
+            $page_title = $config->get('gbifpublications.page_title');
+
+            //Path of the module
+            $module_handler = \Drupal::service('module_handler');
+            $module_path = $module_handler->getModule('gbifpublications')->getPath();
+
+            //Get informations
+            $curl_publications = curl_init();
+            curl_setopt_array($curl_publications, [
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_URL => 'https://www.gbif.org/api/resource/search?contentType=literature&countriesOfResearcher=' . $country
+            ]);
+
+            if (!curl_exec($curl_publications)) {
+                die('Error: "' . curl_error($curl_publications) . '" - Code: ' . curl_errno($curl_publications));
+            } else {
+                $publications_json = curl_exec($curl_publications);
+                curl_close($curl_publications);
+            }
+
+            //Extract informations
+            $publications_object = json_decode($publications_json);
+            $publications = $publications_object->{"results"};
+
+            //Save informations
+            file_put_contents($module_path . '/data/' . $country . '-publications.json', json_encode($publications));
         }
-
-        //Extract informations
-        $publications_object = json_decode($publications_json);
-        $publications = $publications_object->{"results"};
-
-        //Save informations
-        file_put_contents($module_path.'/data/'.$country.'-publications.json', json_encode($publications));
 
         /*  Data for the displaying of information  */
 

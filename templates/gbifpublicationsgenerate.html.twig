@@ -12,7 +12,13 @@
  */
 #}
 <div id="publications">
-  <p>Génération complète</p>
-  <p></p>
-  <p>Pour voir les publications, allez sur la page <a href="../../gbifpublications/display/{{ country_code }}/0" target="_blank">/gbifpublications/display/{{ country_code }}/0</a></p>
+  {% if message_erreur is not sameas("NoError") %}
+    <p>La page a rencontrée une erreur : </p>
+    <p></p>
+    <p>{{ message_erreur }}</p>
+  {% else %}
+    <p>Génération complète</p>
+    <p></p>
+    <p>Pour voir les publications, allez sur la page <a href="../../gbifpublications/display/{{ country_code }}/0" target="_blank">/gbifpublications/display/{{ country_code }}/0</a></p>
+  {% endif %}
 </div>

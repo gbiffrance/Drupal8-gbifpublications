@@ -1,6 +1,7 @@
 name: GBIF Publications
-type: module
 description: 'GBIF Publications displayer for Drupal'
-package: Development
-core: 8.x
-configure: gbifpublications.form
+
+type: module
+core_version_requirement: ^8 || ^9
+
+configure: gbifstats.form
